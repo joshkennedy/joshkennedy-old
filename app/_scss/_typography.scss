@@ -1,0 +1,169 @@
+@import "variables", "mixins";
+
+///////////////////////////////////////
+// Typography
+///////////////////////////////////////
+
+// Let's set some global styles
+body {
+  font: normal 100%/1.4 $serif;
+  color: $text;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+// Ensure body copy, input and button text all render the same
+body, input, button {
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: $text;
+  text-decoration: none;
+  @include transition(all 200ms ease-in);
+  &:hover {
+  //   color: lighten($orange, 10%);
+    @include transition(all 200ms ease-out);
+  }
+}
+h1, h2, h3, h4, h5, h6 {
+  font: bold 100%/1.4 $sans-serif;
+}
+h1 {
+  font-size: $font-size-px * 2;
+  font-size: $font-size * 2;
+}
+h2 {
+  font-size: $font-size-px * 1.5;
+  font-size: $font-size * 1.5;
+}
+h3 {
+  font-size: $font-size-px * 1.17;
+  font-size: $font-size * 1.17;
+}
+h4 {
+  font-size: $font-size-px;
+  font-size: $font-size;
+}
+h5 {
+  font-size: $font-size-px * .83;
+  font-size: $font-size * .83;
+}
+h6 {
+  font-size: $font-size-px * .75;
+  font-size: $font-size * .75;
+}
+p {
+  font-size: $font-size-px;
+  font-size: $font-size;
+  line-height: $line-height;
+  margin-bottom: $gutter;
+  // word-break: break-all;
+  // word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+b, strong { 
+  font-weight: bold;
+}
+i, em {
+  font-style: italic;
+}
+u, ins {
+  text-decoration: underline;
+}
+s, strike, del {
+  text-decoration: line-through;
+}
+ul, ol {
+  margin-bottom: $gutter;
+  padding-left: $gutter*2;
+  li {
+    font-size: $font-size-px;
+    font-size: $font-size;
+    line-height: $line-height;
+    margin-bottom: $gutter/2;
+  }
+}
+ul {
+  list-style: disc;
+}
+ol {
+  list-style: upper-roman;
+}
+code, tt, pre,
+kbd, var, samp {
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", monospace;
+}
+code, samp, kbd {
+  text-align: left;
+  color: $text;
+  background: $gray;
+}
+pre code {
+  line-height: $line-height;
+  font-size: $font-size-px;
+  font-size: $font-size;
+}
+pre {
+  padding: $font-size;
+  margin: $type-margin-bottom 0;
+  overflow: auto;
+  width: 100%;
+  background: $gray;
+}
+// Target IE6 & IE7
+*:first-child+html pre {
+  padding-bottom: $type-margin-bottom;
+  overflow-y: hidden;
+  overflow: visible;
+  overflow-x: auto; 
+}
+* html pre { 
+  padding-bottom: $type-margin-bottom;
+  overflow: visible;
+  overflow-x: auto;
+}
+small {
+  font-size: $font-size-px * .85;
+  font-size: $font-size * .85;
+}
+big {
+  font-size: $font-size-px * 1.2;
+  font-size: $font-size * 1.2;
+}
+sup {
+  font-size: $font-size-px / 2;
+  vertical-align: super;
+}
+sub {
+  font-size: $font-size-px / 2;
+  vertical-align: sub;
+}
+hr {
+  margin: ($type-margin-bottom * 2) auto;
+  display: block;
+  border: 0;
+  color: #CCC;
+  &:after {
+    content: '* * *';
+    display: block;
+    text-align: center;
+    font-size: $font-size-px * 2;
+    line-height: 100%;
+  }
+}
+blockquote {
+  //font-style: italic;
+  color: lighten($text, 35%);
+  font-family: $sans-serif;
+  margin: 0 auto $type-margin-bottom;
+  padding: $type-margin-bottom 0;
+  border-left: 4px solid lighten($text, 50%);
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+  @include breakpoint(mobile) {
+    padding-left: $gutter;
+  }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+  <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+  <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+  <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+  <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ page.title }}</title>
+  
+    <meta name="description" content="Josh Kennedy is a designer and front-end developer who does branding, web design, graphic design, and packaging.">
+    <meta name="author" content="Josh Kennedy">
+    <meta name="keywords" content="web design, graphic design, identity, branding, logo design, website design, packaging, print design, creative, singapore" />
+    <meta name="robots" content="follow, all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+    <!-- build:css({app,.tmp}) /css/main.css -->
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js({app,.tmp}) /js/head-scripts.js -->
+    <!-- Replace with a custom modernizer build for production -->
+    <script src="/_bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+    <script type="text/javascript" src="//use.typekit.net/mju6zib.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    
+    <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div id="st-container" class="st-container">
+      <div class="st-pusher">
+
+        <nav class="st-menu st-effect-6" id="menu-6">
+          <h2>Menu</h2>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="http://dribbble.com/joshkennedy">Work</a></li>
+            <li><a href="http://twitter.com/joshkennedy">Twitter</a></li>
+            <li><a href="/colophon">Colophon</a></li>
+          </ul>
+        </nav>
+
+        <div class="st-content">
+          <div class="st-content-inner">
+            <div id="st-trigger-effects">
+              <button data-effect="st-effect-6">
+                <img src="/img/menu.svg" alt="Menu">
+              </button>
+            </div>
+          </div>
+
+          <header class="post-header" style="background-image: url(http://joshkennedy.me/{{page.header_image}})">
+            <div class="overlay">
+              <hgroup>
+                <h1 class="title">{{ page.title }}</h1>
+                <p><small><time>{{ page.date | date: "%B %d, %Y" }}</time></small></p>
+              </hgroup>
+            </div>
+          </header>
+
+        <section class="blog-post">
+          <article>
+            {{ content }}
+          </article>
+        </section>
+
+        {% if page.comments %}
+        <div class="comments">
+          <article>
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                var disqus_shortname = 'joshkennedy';
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          </article>
+        </div>
+        {% endif %}
+
+        <div class="pagination">
+          <div class="container">
+            <nav>
+              {% if page.previous.url %}
+                <h6><a href="{{page.previous.url}}" title="Previous: {{page.previous.title}}">&laquo; {{page.previous.title}}</a></h6>
+              {% endif %}
+
+              {% if page.next.url %} 
+                <h6><a href="{{page.next.url}}" title="Next: {{page.next.title}}">{{page.next.title}} &raquo; </a></h6>
+              {% endif %}
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include scripts.html %}
+
+  </body>
+</html>

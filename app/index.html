@@ -1,0 +1,14 @@
+---
+layout: default
+title: Josh Kennedy &ndash; UI Designer &amp; Front-end Developer
+---
+
+<h1>Latest Posts</h1>
+
+{% for post in site.posts %}
+  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+  <p><em><time>{{ post.date | date_to_string }}</time></em></p>
+  <hr>
+{% endfor %}
+
+<a href="#" class="button">See full archive &raquo;</a>

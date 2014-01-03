@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Josh Kennedy -- Designer/Developer -- @joshkenendy
+
+# THANKS
+
+    Jake Long -- @jacobelong
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr, CSS Wizardry Grids, fittext.js

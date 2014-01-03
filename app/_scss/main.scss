@@ -1,0 +1,60 @@
+///////////////////////////////////////
+// Imports
+///////////////////////////////////////
+
+@import "variables",
+        "mixins",
+        "reset",
+        "grid",
+        "typography",
+        "menu",
+        "buttons",
+        "layout",
+        "syntax";
+        //"animate";
+
+
+///////////////////////////////////////
+// Global Styles
+///////////////////////////////////////
+
+body {
+  background: $white;
+}
+
+header h1, header p {
+  //@include animation(700ms, 1s, fadeInDown);
+}
+header nav {
+  //@include animation(1.5s, 1s, fadeInDown);
+}
+
+///////////////////////////////////////
+// Media Queries
+///////////////////////////////////////
+
+@import "media_queries";
+
+
+///////////////////////////////////////
+// Print Styles
+///////////////////////////////////////
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

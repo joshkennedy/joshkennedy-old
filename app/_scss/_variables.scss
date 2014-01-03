@@ -1,0 +1,53 @@
+///////////////////////////////////////
+// Global Variables
+///////////////////////////////////////
+
+  $site-width: 960px;
+
+
+///////////////////////////////////////
+// Colors
+///////////////////////////////////////
+
+  $white:              #FFFFFF;
+  $text:              #4C4752;
+  $gray:              #E9ECED;
+  $orange:            #DE8C61;
+
+
+///////////////////////////////////////
+// Type Stuff
+///////////////////////////////////////
+
+  $serif: "freight-text-pro", Georgia, "Times New Roman", serif;
+  $sans-serif: "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+  $type-ratio: 1.45;
+  $font-size: 1.3125rem; // 21px
+  $font-size-px: 21px;
+  $line-height: $type-ratio;
+  $type-margin-bottom: $font-size * $type-ratio;
+
+
+///////////////////////////////////////
+// Grid Magicks
+///////////////////////////////////////
+  $responsive:            true!default;
+  $mobile-first:          true!default;
+  $gutter:                25px!default;
+  $use-silent-classes:    true!default;
+  $push:                  true!default;
+  $pull:                  true!default;
+  $use-markup-fix:        false!default;
+  $breakpoints: (
+      'palm' '(max-width: 480px)',
+      'lap' '(min-width: 481px) and (max-width: 1023px)',
+      'portable' '(max-width: 1023px)',
+      'desk' '(min-width: 1024px)'
+  )!default;
+  $breakpoint-has-widths: ('palm', 'lap', 'portable', 'desk')!default;
+  $breakpoint-has-push:   ('palm', 'lap', 'portable', 'desk')!default;
+  $breakpoint-has-pull:   ('palm', 'lap', 'portable', 'desk')!default;
+  $class-type:            unquote(".");
+  @if $use-silent-classes == true{
+      $class-type:        unquote("%");
+  }
