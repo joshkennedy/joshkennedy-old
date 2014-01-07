@@ -134,6 +134,11 @@ footer a {
     @extend %one-third;
     height: 300px;
     @include full-width-background(center, center);
+    @include transition(opacity 100ms ease-out);
+    &:hover {
+      @include opacity(80);
+      @include transition(opacity 100ms ease-in);
+    }
   }
   .roomorama-iphone {
     background-image: url('/img/roomorama-iphone.jpg')
@@ -141,8 +146,17 @@ footer a {
   .roomorama-website {
     background-image: url('/img/roomorama-website.jpg')
   }
-  .communicator {
-    background-image: url('/img/communicator.jpg')
+  .calibre-app {
+    background-image: url('/img/calibre-app.jpg')
+  }
+  .coffee-hows {
+    background-image: url('/img/coffee-hows.jpg')
+  }
+  .women-in-mining {
+    background-image: url('/img/women-in-mining.jpg')
+  }
+  .zleek {
+    background-image: url('/img/zleek.jpg')
   }
 }
 
@@ -156,6 +170,7 @@ footer a {
     @extend %one-half;
     @extend %palm--one-whole;
     padding: 0 $gutter/2;
+    margin-bottom: $gutter*2;
     @include breakpoint(mobile) {
       padding: 0;
     }
