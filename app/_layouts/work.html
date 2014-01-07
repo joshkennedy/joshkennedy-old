@@ -1,15 +1,11 @@
 {% include header.html %}
 
-    <header class="work-header">
-      <hgroup>
-        <h1>{{ page.title }}</h1>
-      </hgroup>
-    </header>
-
-    <section class="work-post">
+    <section class="portfolio">
       {% for post in site.categories.work %}
       <article>
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <figure>
+          <a href="{{ post.url }}"><img src="/img/{{ post.slug}}.jpg" alt="{{ post.title }}"></a>
+        </figure>
       </article>
       {% endfor %}
     </section>

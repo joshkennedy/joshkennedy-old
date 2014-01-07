@@ -2,7 +2,7 @@
 layout: post
 title:  "The Death of the Designer"
 categories: writing
-comments: false
+comments: true
 header_image: "img/crypts.jpg"
 ---
 The past three-and-a-half years have been a whirlwind of trial-and-error learning experiences. Singapore is ever-changing; it’s a proverbial amoeba of skyscraper highs and bargain-basement lows. In order to survive in such a fast-paced, career-centric society, one quickly learns to adapt, to re-learn how to learn.

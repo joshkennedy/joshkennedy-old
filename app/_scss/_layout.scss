@@ -55,8 +55,14 @@ footer a {
   }
 }
 
+.body-archive {
+  .blog {
+    padding-top: $gutter*4;
+  }
+}
+
 .about {
-  padding: $gutter*2 0 $gutter*4;
+  padding: $gutter*2 0 0;
   @extend %grid--center;
   @extend %grid--full;
   @extend %container;
@@ -121,35 +127,38 @@ footer a {
   }
 }
 
-// .work {
-//   @extend %grid--full;
-//   background: #000;
-//   div {
-//     @extend %grid__item;
-//     @extend %one-third;
-//     height: 300px;
-//     @include full-width-background(center, center);
-//   }
-//   .roomorama-iphone {
-//     background-image: url('/img/roomorama-iphone.jpg')
-//   }
-//   .roomorama-website {
-//     background-image: url('/img/roomorama-website.jpg')
-//   }
-//   .communicator {
-//     background-image: url('/img/communicator.jpg')
-//   }
-// }
-
 .work {
-  @extend %container;
-  @extend %grid--center;
   @extend %grid--full;
   article {
     @extend %grid__item;
-    @extend %three-fifths;
-    @extend %lap--four-fifths;
-    @extend %palm--nine-tenths;
+    @extend %one-third;
+    height: 300px;
+    @include full-width-background(center, center);
+  }
+  .roomorama-iphone {
+    background-image: url('/img/roomorama-iphone.jpg')
+  }
+  .roomorama-website {
+    background-image: url('/img/roomorama-website.jpg')
+  }
+  .communicator {
+    background-image: url('/img/communicator.jpg')
+  }
+}
+
+.portfolio {
+  @extend %container;
+  @extend %grid--full;
+  @extend %grid--center;
+  padding-top: $gutter*2;
+  article {
+    @extend %grid__item;
+    @extend %one-half;
+    @extend %palm--one-whole;
+    padding: 0 $gutter/2;
+    @include breakpoint(mobile) {
+      padding: 0;
+    }
   }
 }
 
