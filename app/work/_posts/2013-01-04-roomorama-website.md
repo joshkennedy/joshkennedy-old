@@ -5,8 +5,10 @@ categories: work
 slug: roomorama-website
 excerpt: "Web Design, Front-end Development"
 ---
+This is the third iteration of the Roomorama website that I've done. Built atop a customized Bootstrap framework, it's the largest-scale resdesign we've done to date.
 
-When I joined Roomorama in early 2011... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ipsam omnis numquam fugiat! Corporis, ea, dolores voluptatibus iure labore iusto ducimus dolorum necessitatibus molestiae at animi ullam quas nobis! Dolor.
+The new design has several new features, including Neighborhood Guides and a customized recommendation engine.
+
 {% directory path: work/images/roomorama-website %}
   ![{{ file.name }}]({{ file.url }})
 {% enddirectory %}
