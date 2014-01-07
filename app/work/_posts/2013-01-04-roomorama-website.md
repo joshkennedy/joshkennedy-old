@@ -9,6 +9,6 @@ This is the third iteration of the Roomorama website that I've done. Built atop 
 
 The new design has several new features, including Neighborhood Guides and a customized recommendation engine.
 
-{% directory path: work/images/roomorama-website %}
+{% directory path: img/work/roomorama-website %}
   ![{{ file.name }}]({{ file.url }})
 {% enddirectory %}

@@ -9,6 +9,6 @@ I was comissioned in early 2012 to design a logo for the Singapore branch of the
 
 WIMSG is a network to connect women in Singapore to others in the same industry. As more and more mining companies have moved offices to Singapore, there was a demand for such a network.
 
-{% directory path: work/images/women-in-mining %}
+{% directory path: img/work/women-in-mining %}
   ![{{ file.name }}]({{ file.url }})
 {% enddirectory %}

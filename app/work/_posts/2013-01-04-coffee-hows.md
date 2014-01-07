@@ -13,6 +13,6 @@ I recruited the help of my buddy [Ben Blake](http://drawcoffee.com) ([@drawcoffe
 
 The folks at Coffee How's have been happy with their new branding and recently moved into a shiny new location. 
 
-{% directory path: work/images/coffee-hows %}
+{% directory path: img/work/coffee-hows %}
   ![{{ file.name }}]({{ file.url }})
 {% enddirectory %}
