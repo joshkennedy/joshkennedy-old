@@ -7,7 +7,6 @@
         "reset",
         "grid",
         "typography",
-        "menu",
         "buttons",
         "layout",
         "syntax";
@@ -22,12 +21,27 @@ body {
   background: $white;
 }
 
-header h1, header p {
-  //@include animation(700ms, 1s, fadeInDown);
+nav {
+  @extend %grid;
+  @extend %grid--full;
+  padding: $gutter/2 0;
+  ul {
+    @extend %grid__item;
+    list-style: none;
+    margin-bottom: 0;
+  }
+  ul li {
+    display: inline;
+    font-family: $sans-serif;
+    font-size: $font-size-px * .8;
+    font-size: $font-size * .8;
+    padding: 0 $gutter;
+    @include breakpoint(mobile) {
+      padding: 0 $gutter/2.2;
+    }
+  }
 }
-header nav {
-  //@include animation(1.5s, 1s, fadeInDown);
-}
+
 
 ///////////////////////////////////////
 // Media Queries

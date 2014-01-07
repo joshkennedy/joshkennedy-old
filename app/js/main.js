@@ -8,16 +8,6 @@ $(document).ready(function() {
   });
   $(window).trigger('resize');
 
-  // Make those headlines behave!
-  $(".home-header h1").fitText(0.7, {
-    minFontSize: '20px',
-    maxFontSize: '90px'
-  });
-  $("footer h2").fitText(1.5, {
-    minFontSize: '24px',
-    maxFontSize: '50px'
-  });
-
   // Remove Markdown's annoying <p> tags around images
    $("p:has(img)").contents().unwrap();
 

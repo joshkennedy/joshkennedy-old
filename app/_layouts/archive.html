@@ -1,39 +1,9 @@
-<!DOCTYPE html>
-  <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-  <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-  <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-  <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ page.title }}</title>
-  
-    <meta name="description" content="Josh Kennedy is a designer and front-end developer who does branding, web design, graphic design, and packaging.">
-    <meta name="author" content="Josh Kennedy">
-    <meta name="keywords" content="web design, graphic design, identity, branding, logo design, website design, packaging, print design, creative, singapore" />
-    <meta name="robots" content="follow, all" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+{% include header.html %}
 
-    <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+  <section class="blog-post">
+    <article>
+      {{ content }}
+    </article>
+  </section>
 
-    <!-- build:css({app,.tmp}) /css/main.css -->
-    <link rel="stylesheet" href="/css/main.css">
-    <!-- endbuild -->
-
-    <!-- build:js({app,.tmp}) /js/head-scripts.js -->
-    <!-- Replace with a custom modernizer build for production -->
-    <script src="/_bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
-
-    <script type="text/javascript" src="//use.typekit.net/mju6zib.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    
-    <!--[if IE]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-    {{ content }}
-  </body>
-</html>
+{% include footer.html %}

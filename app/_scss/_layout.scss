@@ -8,14 +8,16 @@
 
 header, section, footer {
   @extend %grid;
+}
+header, footer {
   @include breakpoint(desktop) {
-    min-height: 650px;
+    min-height: 580px;
   }
   @include breakpoint(tablet) {
-    min-height: 500px;
+    min-height: 440px;
   }
   @include breakpoint(mobile) {
-    min-height: 355px;
+    min-height: 320px;
   }
 }
 
@@ -139,8 +141,20 @@ footer a {
 //   }
 // }
 
+.work {
+  @extend %container;
+  @extend %grid--center;
+  @extend %grid--full;
+  article {
+    @extend %grid__item;
+    @extend %three-fifths;
+    @extend %lap--four-fifths;
+    @extend %palm--nine-tenths;
+  }
+}
+
 .blog {
-  padding: $gutter*4 0;
+  //padding: $gutter*4 0;
   @extend %container;
   @extend %grid--center;
   @extend %grid--full;

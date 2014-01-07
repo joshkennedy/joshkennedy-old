@@ -8,6 +8,4 @@ I tenderly hand-coded everything in [Sublime Text 3](http://sublimetext.com) whi
 
 The site is set in Freight Sans Pro (bold and light) and Freight Text Pro (book and bold), both served proudly by [Typekit](http://typekit.com).
 
-The fancy menu functionality is a modified version of [Sidebar Transitions](http://tympanus.net/Development/SidebarTransitions/) by Mary Lou at Codrops.
-
 Hosting by [MediaTemple](http://www.mediatemple.net#a_aid=5077c70cd4b95). Version-controlled on [Github](http://github.com/joshkennedy/joshkennedy).
