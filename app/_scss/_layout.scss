@@ -47,6 +47,10 @@ footer a {
   @include breakpoint(mobile) {
     padding-top: $gutter*2;
   }
+  figure {
+    @extend %grid__item;
+    @extend %palm--one-half;
+  }
   h1 {
     text-transform: uppercase;
   }
@@ -66,6 +70,9 @@ footer a {
   @extend %grid--center;
   @extend %grid--full;
   @extend %container;
+  @include breakpoint(mobile) {
+    padding-top: 0;
+  }
   article {
     @extend %three-fifths;
     @extend %lap--four-fifths;
@@ -80,6 +87,7 @@ footer a {
       text-transform: uppercase;
       font-weight: bold;
       font-size: $font-size * 1.3;
+      padding-left: 0;
     }
     ul li {
       display: inline-block;
@@ -132,6 +140,8 @@ footer a {
   article {
     @extend %grid__item;
     @extend %one-third;
+    @extend %lap--one-half;
+    @extend %palm--one-whole;
     height: 300px;
     @include full-width-background(center, center);
     @include transition(opacity 100ms ease-out);
@@ -173,6 +183,7 @@ footer a {
     margin-bottom: $gutter*2;
     @include breakpoint(mobile) {
       padding: 0;
+      margin-bottom: $gutter;
     }
   }
 }
@@ -287,37 +298,6 @@ footer a {
       @extend %seven-tenths;
       margin-left: auto;
       margin-right: auto;
-    }
-  }
-}
-
-.pagination {
-  background: $orange;
-  @extend %grid--center;
-  nav {
-    @extend %grid;
-    @extend %grid--full;
-    padding: $gutter*4;
-  }
-  h6 {
-    @extend %grid__item;
-    @extend %one-half;
-    @extend %palm--one-whole;
-    a {
-      color: white;
-    }
-  }
-  @include breakpoint(tablet) {
-    nav {
-      padding: $gutter*2;
-    }
-  }
-  @include breakpoint(mobile) {
-    nav {
-      padding: $gutter;
-    }
-    h6 {
-      margin-bottom: $gutter;
     }
   }
 }

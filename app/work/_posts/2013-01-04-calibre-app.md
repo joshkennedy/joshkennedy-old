@@ -5,7 +5,7 @@ categories: work
 slug: calibre-app
 excerpt: "Application Design"
 ---
-I love Calibre. It find it to be the only viable solution for managing and organizing my ebooks. Sadly, each subsequent release of the application is bogged down with features I’ll never use.
+I love [Calibre](http://calibre-ebook.com). I find it to be the only viable solution for managing and organizing my ebooks. Sadly, each subsequent release of the application is bogged down with features I’ll never use.
 
 I wanted something snappy; something that loads in seconds despite the size of my library; something that doesn't make me feel as if I'm looking at spreadsheets from 2002. 
 
