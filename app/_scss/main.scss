@@ -25,6 +25,13 @@ nav {
   @extend %grid;
   @extend %grid--full;
   padding: $gutter/2 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255,255,255,.85);
+  border-top: 4px solid $orange;
+  z-index: 100;
   ul {
     @extend %grid__item;
     list-style: none;

@@ -11,13 +11,13 @@ header, section, footer {
 }
 header, footer {
   @include breakpoint(desktop) {
-    min-height: 580px;
+    min-height: 550px;
   }
   @include breakpoint(tablet) {
-    min-height: 440px;
+    min-height: 400px;
   }
   @include breakpoint(mobile) {
-    min-height: 320px;
+    min-height: 280px;
   }
 }
 
@@ -66,7 +66,7 @@ footer a {
 }
 
 .about {
-  padding: $gutter*2 0 0;
+  padding: $gutter 0 0;
   @extend %grid--center;
   @extend %grid--full;
   @extend %container;
@@ -77,6 +77,9 @@ footer a {
     @extend %three-fifths;
     @extend %lap--four-fifths;
     @extend %palm--nine-tenths;
+    a {
+      text-decoration: underline;
+    }
   }
   aside {
     //@extend %container;
