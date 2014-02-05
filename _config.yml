@@ -3,11 +3,14 @@
 # 2. config.build.yml
 # 3. config.yml
 
-name: joshkennedy
-description: Josh Kennedy
+name: Josh Kennedy
+description: "UI Designer & Front-end Developer"
+url: http://joshkennedy.me/writing
 author:
   name: Josh Kennedy
   email: hello@joshkennedy.me
+copyright: 2014
+rss_path: /writing
 
 # Grunt handles images and assets.
 exclude: ['img', 'css', 'js', 'fonts',
