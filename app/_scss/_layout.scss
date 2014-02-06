@@ -299,6 +299,7 @@ footer a {
     @extend %container;
     #disqus_thread {
       @extend %seven-tenths;
+      @extend %palm--one-whole;
       margin-left: auto;
       margin-right: auto;
     }
